@@ -1,0 +1,16 @@
+[core]
+	excludesfile = /Users/michalduczynski/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[user]
+	name = Michal Duczynski
+	email = mduczek@gmail.com
+[merge]
+	tool = /Applications/p4merge.app/Contents/MacOS/p4merge
+[mergetool]
+	keepTemporaries = false
+	prompt = false
